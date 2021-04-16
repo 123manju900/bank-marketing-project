@@ -51,7 +51,7 @@ Azure provides valuable information after deployment using App-Insights. For acc
 Now go to azure studio and in the endpoints section, we can see that the Application insights are enabled
 ![app insight proof](https://user-images.githubusercontent.com/51949018/115063403-25a4a000-9f09-11eb-8ce4-fab6ed77917b.png)
 
-To enable app insights `config.json` file is downloaded in the folder where docker is running and logs.py file is run 
+To enable app insights `config.json` file is downloaded in the folder where docker is running and run  logs.py file is run 
 
 ## Swagger documentation 
 In this Swagger container is deployed to view the swagger documentation. To run Swagger, swagger.json file is downloaded into the swagger folder and swagger.sh and serve.py are run with port as 
@@ -72,8 +72,20 @@ Now once the model is deployed. We can run endpoints.py file to check and intera
 ![endpoint](https://user-images.githubusercontent.com/51949018/115065202-787f5700-9f0b-11eb-8632-953ccd90654e.png)
 
 
+## Create and Publish a pipeline
+To create a pipeline, we are going to creat a pipepline instance using AutoMLConfig by passing required parameters. Once the pipeline is run, the pipeline could be published with best parameters. This published could be accessed remotely using Python SDK as RESTAPI
 
+![completed status1](https://user-images.githubusercontent.com/51949018/115074403-4aa00f80-9f17-11eb-8eaf-56544f6f5587.png)
+![datasets](https://user-images.githubusercontent.com/51949018/115074436-54297780-9f17-11eb-913f-bcaf87abe971.png)
 
+publishing the pipeline and access the RESTAPI
+
+![RESTpipeline](https://user-images.githubusercontent.com/51949018/115074860-e29df900-9f17-11eb-90fa-47987bf5f3d7.png)
+![Resturl](https://user-images.githubusercontent.com/51949018/115074863-e5005300-9f17-11eb-8a3a-11499875fe92.png)
+
+`RunWidget`
+![widget2](https://user-images.githubusercontent.com/51949018/115074870-e762ad00-9f17-11eb-8411-5f5ae3f04d39.png)
+![run widget](https://user-images.githubusercontent.com/51949018/115074880-e92c7080-9f17-11eb-8620-8a1f58b6ad01.png)
 
 
 
@@ -81,4 +93,6 @@ Now once the model is deployed. We can run endpoints.py file to check and intera
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+* Remove negative co-related features and run the model 
+* Increase the number of iterations and check for accuracy 
+* changing the target column and checking for output result 
