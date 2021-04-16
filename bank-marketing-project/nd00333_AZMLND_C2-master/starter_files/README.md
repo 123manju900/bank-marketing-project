@@ -2,15 +2,55 @@
 
 
 # Bank-Marketing-Project 
-In this project,AutoML is used to find the best algorithm. The Dataset is used here is bank Marketing dataset 
+In this project, AutoML is used to find the best algorithm. The Dataset is used here is bank Marketing dataset. It is a classification problem 
+
+After finding the best algorithm, model is deployed,published and made available to consume the endpoint using python SDK and Designer 
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step.
+<img width="626" alt="screen-shot-2020-09-15-at-12 36 11-pm" src="https://user-images.githubusercontent.com/51949018/115059405-24bd3f80-9f04-11eb-8cf3-f0c66ee837af.png">
+In this project, we will following the below steps:
+
+1. Authentication
+2. Automated ML Experiment
+3. Deploy the best model
+4. Enable logging
+5. Swagger Documentation
+6. Consume model endpoints
+7. Create and publish a pipeline
+
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screencasts required to demonstrate key steps. 
+### Authentication
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+Since I was using the lab provided by the Udacity, the authentication was already done
+
+For running the experiment, the dataset used is [Bank-Marketing](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) datset. First we are going to create a compute instance of `Stanard_D12_V2` with minimum 1 node
+
+### Dataset 
+The screenshot of the loaded Dataset
+![dataset](https://user-images.githubusercontent.com/51949018/115060639-bd07f400-9f05-11eb-8d1f-435385aad509.png)
+
+Next, we are going to create AutoML experiment and below is the screenshot showing the completion of AutoML run with best algorithm as **Voting Ensemble** 
+![completed_autoML](https://user-images.githubusercontent.com/51949018/115062126-a06cbb80-9f07-11eb-9797-29fee3e06087.png)
+
+screenshot of best model 
+![best_model - Copy](https://user-images.githubusercontent.com/51949018/115062293-d27e1d80-9f07-11eb-9a19-3eede017f0a6.png)
+
+Deploying best model 
+
+Now the best model is deployed with the name *deploy-model* and `key-based authentication is =True`
+![deploy](https://user-images.githubusercontent.com/51949018/115062477-01948f00-9f08-11eb-95e5-8b2944e3f269.png)
+
+## Enable logging 
+Azure provides valuable information after deployment using App-Insights. For accessing the app-insights 
+
+### Run log.py 
+![app insight1](https://user-images.githubusercontent.com/51949018/115063130-cba3da80-9f08-11eb-9506-2dffe11e4efa.png)
+![app_insights](https://user-images.githubusercontent.com/51949018/115063140-cf376180-9f08-11eb-9f42-c1edb1cc2815.png)
+
+Now go to azure studio and in the endpoints section, we can see that the Application insights are enabled
+![app insight proof](https://user-images.githubusercontent.com/51949018/115063403-25a4a000-9f09-11eb-8ce4-fab6ed77917b.png)
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
