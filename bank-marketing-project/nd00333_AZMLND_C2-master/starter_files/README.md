@@ -64,6 +64,13 @@ serve.py after running
 
 after running swagger.sh 
 ![swaggerbash](https://user-images.githubusercontent.com/51949018/115064633-c9428000-9f0a-11eb-9cc4-a4a51feb48a6.png)
+We can see GET and POST requests for swagger
+
+## Consume End points
+Now once the model is deployed. We can run endpoints.py file to check and interact with the model. To run endpoints.py file, replace `scoring_uri` and `key` of the deployed service and endpoints.py 
+
+![endpoint](https://user-images.githubusercontent.com/51949018/115065202-787f5700-9f0b-11eb-8632-953ccd90654e.png)
+
 
 
 
