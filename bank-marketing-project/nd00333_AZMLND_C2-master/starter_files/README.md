@@ -51,6 +51,24 @@ Azure provides valuable information after deployment using App-Insights. For acc
 Now go to azure studio and in the endpoints section, we can see that the Application insights are enabled
 ![app insight proof](https://user-images.githubusercontent.com/51949018/115063403-25a4a000-9f09-11eb-8ce4-fab6ed77917b.png)
 
+To enable app insights `config.json` file is downloaded in the folder where docker is running and logs.py file is run 
+
+## Swagger documentation 
+In this Swagger container is deployed to view the swagger documentation. To run Swagger, swagger.json file is downloaded into the swagger folder and swagger.sh and serve.py are run with port as 
+
+` docker run -p 9000:8080 swaggerapi/swaggerui `
+
+serve.py after running
+![serve1](https://user-images.githubusercontent.com/51949018/115064166-3bff2b80-9f0a-11eb-95ac-2516afc3775e.png)
+![serve2](https://user-images.githubusercontent.com/51949018/115064172-3e618580-9f0a-11eb-9f26-c0e4a15822b4.png)
+
+after running swagger.sh 
+![swaggerbash](https://user-images.githubusercontent.com/51949018/115064633-c9428000-9f0a-11eb-9cc4-a4a51feb48a6.png)
+
+
+
+
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
