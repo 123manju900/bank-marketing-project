@@ -90,7 +90,7 @@ publishing the pipeline and access the RESTAPI
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+[YouTube Link](https://youtu.be/I2YEtZKv4Gc)
 
 ## Standout Suggestions
 * Remove negative co-related features and run the model 
