@@ -75,7 +75,10 @@ Now once the model is deployed. We can run endpoints.py file to check and intera
 ## Create and Publish a pipeline
 To create a pipeline, we are going to creat a pipepline instance using AutoMLConfig by passing required parameters. Once the pipeline is run, the pipeline could be published with best parameters. This published could be accessed remotely using Python SDK as RESTAPI
 
+![pipeline2](https://user-images.githubusercontent.com/51949018/115098690-003a8500-9f4f-11eb-9b98-b6f29f416356.png)
+This screenshot showing completed status which I have zoomed in
 ![completed status1](https://user-images.githubusercontent.com/51949018/115074403-4aa00f80-9f17-11eb-8eaf-56544f6f5587.png)
+
 ![datasets](https://user-images.githubusercontent.com/51949018/115074436-54297780-9f17-11eb-913f-bcaf87abe971.png)
 
 publishing the pipeline and access the RESTAPI
